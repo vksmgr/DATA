@@ -1,0 +1,19 @@
+fn main() {
+    println!("GCD is {}",gcd(2*5*11*17,3*7*13*19));
+}
+
+
+//GCD
+
+fn gcd(mut n: u64, mut m: u64) -> u64{
+    assert!(n != 0 && m != 0);
+    while m != 0 {
+        if m < n {
+            let t = m;
+            m = n;
+            n = t;
+        }
+        m = m % n;
+    }
+    n
+}

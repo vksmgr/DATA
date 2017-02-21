@@ -1,0 +1,6 @@
+[package]
+name = "DATA"
+version = "0.1.0"
+authors = ["vksmgr <cseghrce@gmail.com>"]
+
+[dependencies]
